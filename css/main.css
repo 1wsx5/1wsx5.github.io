@@ -12,4 +12,6 @@ body {
 
 h3:first-line{color:#fadadd;font-size:20px}
 li:hover:after{color:#fadadd;font-size: 110%;content: "Bullets on Byzantium"}
+
+a:link {color: dark green;}
     
