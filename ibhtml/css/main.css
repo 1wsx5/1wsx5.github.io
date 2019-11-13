@@ -10,7 +10,7 @@ body {
 #thermo {color:grey;font-weight:bold}
 
 h3:first-line{color:#fadadd;font-size:20px}
-li:hover:after{color:#fadadd;font-size: 110%;content: "Bullets on Byzantium"}
+li:hover:after{color:#fadadd;font-size: 110%;content: "Bullets on IB"}
 
 a:link {color: dark green;}
 
