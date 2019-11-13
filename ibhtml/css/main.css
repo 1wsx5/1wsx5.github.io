@@ -1,1 +1,35 @@
+body {
+  background-color: #800080;
+  color#AAAAAA;
+}
 
+.gley {color:grey;}
+.glim {color:yellow;}
+
+#newton {color:grey;font-weight:bold}
+#thermo {color:grey;font-weight:bold}
+
+h3:first-line{color:#fadadd;font-size:20px}
+li:hover:after{color:#fadadd;font-size: 110%;content: "Bullets on Byzantium"}
+
+a:link {color: dark green;}
+
+@keyframes IB {
+  0%   {background-color: lightblue;}
+ 
+  100% {background-color: grey;}
+}
+
+
+body {
+  width: 1000px;
+  height: 200px;
+  background-color: red;
+  animation-name: IB;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+h5 {
+  color:green
+}
