@@ -15,9 +15,9 @@ li:hover:after{color:#fadadd;font-size: 110%;content: "Bullets on IB"}
 a:link {color: dark green;}
 
 @keyframes IB {
-  0%   {background-color: lightblue;}
+  0%   {background-color: purple;}
  
-  100% {background-color: grey;}
+  100% {background-color: blue;}
 }
 
 
