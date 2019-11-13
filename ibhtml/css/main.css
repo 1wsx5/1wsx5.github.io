@@ -15,7 +15,7 @@ li:hover:after{color:#fadadd;font-size: 110%;content: "Bullets on IB"}
 a:link {color: dark green;}
 
 @keyframes IB {
-  0%   {background-color: yellow;}
+  0%   {background-color: purple;}
  
   100% {background-color: blue;}
 }
@@ -26,7 +26,7 @@ body {
   height: 200px;
   background-color: red;
   animation-name: IB;
-  animation-duration: 30s;
+  animation-duration: 60s;
   animation-iteration-count: infinite;
 }
 
