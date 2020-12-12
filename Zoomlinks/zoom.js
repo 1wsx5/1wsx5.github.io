@@ -1,3 +1,4 @@
+  
 const today = new Date();
 
 var odd = ["https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdadeschools.zoom.us%2Fj%2F4402441257%3Fpwd%3DQnlZNUFVNm5nTFE2OHZsZ1YySHFJZz09&data=04%7C01%7C0409113%40students.dadeschools.net%7C4131bec139d54c5285a908d880bbbbf0%7C4578f68f86cd4af9b31793e3826ca0f5%7C0%7C0%7C637400891089832308%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C1000&sdata=6ucFv7iPGGcyQ5OBGBrmKhk4nRCvMCj1mT8ezVc2JyA%3D&reserved=0", "https://dadeschools.zoom.us/j/94800510926?pwd=ZUxjNml6bEp3a0k4NSs0SW43bDB6QT09", "https://us02web.zoom.us/j/88094591047?pwd=NC83WHVHUnY5TW51SlRoWW85VHEvZz09"];
@@ -23,7 +24,7 @@ setInterval(function(){
             window.open(odd[0], "blank_");
           } else if (today.getHours() === 10 && today.getMinutes() === 37) {
             window.open(odd[1], "blank_");
-          } else if (today.getHours() > 12 && today.getMinutes() > 50) {
+          } else if (today.getHours() > 12 && today.getMinutes() < 50) {
             window.open(odd[2], "blank_");
           }
         }
