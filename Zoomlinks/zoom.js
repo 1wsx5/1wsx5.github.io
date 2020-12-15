@@ -5,30 +5,31 @@ var odd = ["https://nam10.safelinks.protection.outlook.com/?url=https%3A%2F%2Fda
 
 var even = ["https://zoom.us/j/7867939413?pwd=ZVh4ZXMxMXhIZTQ3SXNjOEFVOVRBUT09", "https://dadeschools.zoom.us/j/96893942696?pwd=Z3JvY2FwWmhHRHgzdnhxSTdUNzlZZz09", "https://us02web.zoom.us/j/2717974361?pwd=VXg3cG1yNVkxNFJOcUlTUitBVmFtUT09", "https://us02web.zoom.us/j/6875367389?pwd=bFZQT2R2bTdBaHd0dnMrejlRSUNTZz09"];
 
-setInterval(function(){ 
-  if(today.getDay() != 6 && today.getDay() != 0) {
-    if (today.getMonth() === 11 || today.getMonth() === 0 && today.getDate() != 1 || today.getMonth === 1 && today.getDate() != 15 || today.getMonth() === 2 && today.getDate() <= 25 || today.getMonth === 3 && today.getDate() >= 5 || today.getMonth === 4 && today.getDate() <= 27 || today.getMonth === 5 && today.getDate() <= 9) {
-      if (today.getDate() <= 18) {
-        if (today.getDate() % 2 === 0) {  
-          if (today.getHours() === 7 && today.getMinutes() === 15) {
-            window.open(even[0], "blank_");
-          } else if (today.getHours() === 8 && today.getMinutes() === 59) {
-            window.open(even[1], "blank_");
-          } else if (today.getHours() === 10 && today.getMinutes() === 37) {
-            window.open(even[2], "blank_");
-          } else if (today.getHours() === 12 && today.getMinutes() === 50) {
-            window.open(even[3], "blank_");
-          }
-        } else {
-          if (today.getHours() === 7 && today.getMinutes() === 15) {
-            window.open(odd[0], "blank_");
-          } else if (today.getHours() === 10 && today.getMinutes() === 37) {
-            window.open(odd[1], "blank_");
-          } else if (today.getHours() > 13) {
-            window.open(odd[2], "blank_");
-          }
+setInterval(function() {
+    if (today.getDay() != 6 && today.getDay() != 0) {
+        if (today.getMonth() === 11 || today.getMonth() === 0 && today.getDate() != 1 || today.getMonth === 1 && today.getDate() != 15 || today.getMonth() === 2 && today.getDate() <= 25 || today.getMonth === 3 && today.getDate() >= 5 || today.getMonth === 4 && today.getDate() <= 27 || today.getMonth === 5 && today.getDate() <= 9) {
+            if (today.getDate() <= 18) {
+                if (today.getDate() % 2 === 0) {
+                    if (today.getHours() === 7 && today.getMinutes() === 15) {
+                        window.open(even[0], "blank_");
+                    } else if (today.getHours() === 8 && today.getMinutes() === 59) {
+                        window.open(even[1], "blank_");
+                    } else if (today.getHours() === 10 && today.getMinutes() === 37) {
+                        window.open(even[2], "blank_");
+                    } else if (today.getHours() === 12 && today.getMinutes() === 50) {
+                        window.open(even[3], "blank_");
+                    }
+                } else {
+                    if (today.getHours() === 7 && today.getMinutes() === 15) {
+                        window.open(odd[0], "blank_");
+                    } else if (today.getHours() === 10 && today.getMinutes() === 37) {
+                        window.open(odd[1], "blank_");
+                    } else if (today.getHours() > 13) {
+                        window.open(odd[2], "blank_");
+                    }
+                }
+            }
         }
-      } 
-    } 
-  } 
-}, 60000);
+    }
+}, 1000);
+
