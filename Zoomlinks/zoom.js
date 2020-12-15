@@ -24,7 +24,7 @@ setInterval(function() {
                         window.open(odd[0], "blank_");
                     } else if (today.getHours() === 10 && today.getMinutes() === 37) {
                         window.open(odd[1], "blank_");
-                    } else if (today.getHours() > 13) {
+                    } else if (today.getHours() === 14 && today.getMinutes() === 18) {
                         window.open(odd[2], "blank_");
                     }
                 }
