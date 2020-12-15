@@ -7,8 +7,8 @@ var even = ["https://zoom.us/j/7867939413?pwd=ZVh4ZXMxMXhIZTQ3SXNjOEFVOVRBUT09",
 
 setInterval(function() {
     if (today.getDay() != 6 && today.getDay() != 0) {
-        if (today.getMonth() === 11 || today.getMonth() === 0 && today.getDate() != 1 || today.getMonth === 1 && today.getDate() != 15 || today.getMonth() === 2 && today.getDate() <= 25 || today.getMonth === 3 && today.getDate() >= 5 || today.getMonth === 4 && today.getDate() <= 27 || today.getMonth === 5 && today.getDate() <= 9) {
-            if (today.getDate() <= 18) {
+        if (today.getMonth() === 11 && today.getDate() <= 18 || today.getMonth() === 0 && today.getDate() != 1 || today.getMonth === 1 && today.getDate() != 15 || today.getMonth() === 2 && today.getDate() <= 25 || today.getMonth === 3 && today.getDate() >= 5 || today.getMonth === 4 && today.getDate() <= 27 || today.getMonth === 5 && today.getDate() <= 9) {
+          if (today.getMonth != 2 || today.getMonth != 5) {
                 if (today.getDate() % 2 === 0) {
                     if (today.getHours() === 7 && today.getMinutes() === 15) {
                         window.open(even[0], "blank_");
@@ -27,9 +27,30 @@ setInterval(function() {
                     } else if (today.getHours() === 12 && today.getMinutes() === 50) {
                         window.open(odd[2], "blank_");
                     }
-                }
-            }
-        }
+                 }
+              }
+      if (today.getMonth === 2 || today.getMonth === 5) {
+                 if (today.getDate() % 2 === 0) {
+                    if (today.getHours() === 7 && today.getMinutes() === 15) {
+                        window.open(odd[0], "blank_");
+                    } else if (today.getHours() === 10 && today.getMinutes() === 37) {
+                        window.open(odd[1], "blank_");
+                    } else if (today.getHours() === 12 && today.getMinutes() === 50) {
+                        window.open(odd[2], "blank_");
+                    }
+                 } else { 
+                    if (today.getHours() === 7 && today.getMinutes() === 15) {
+                        window.open(even[0], "blank_");
+                    } else if (today.getHours() === 8 && today.getMinutes() === 59) {
+                        window.open(even[1], "blank_");
+                    } else if (today.getHours() === 10 && today.getMinutes() === 37) {
+                        window.open(even[2], "blank_");
+                    } else if (today.getHours() === 12 && today.getMinutes() === 50) {
+                        window.open(even[3], "blank_");
+                    }
+                  }
+               }
+         }
     }
 }, 31000);
 
