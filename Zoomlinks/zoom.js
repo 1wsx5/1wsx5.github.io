@@ -31,5 +31,5 @@ setInterval(function() {
             }
         }
     }
-}, 1000);
+}, 31000);
 
