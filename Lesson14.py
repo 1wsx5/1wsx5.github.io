@@ -1,5 +1,12 @@
 # -*- coding: utf-8 -*-
 """
+Created on Fri Dec  4 15:00:08 2020
+
+@author: wsx5
+"""
+
+# -*- coding: utf-8 -*-
+"""
 Created on Wed Nov 18 03:50:34 2020
 
 @author: Ben
@@ -14,9 +21,9 @@ def webscrapingpercentages(url):
     page = requests.get(URL)
 
     soup = BeautifulSoup(page.content, 'html.parser', from_encoding='utf-8')
-    results = soup.find(class_ = 'thumbcaption')
+    results = soup.find(class_ = 'PieChartTemplate thumb tright')
     if results is None:
-       print("restart, you spelled it wrong or put Japan, Japan codes it differently so I can't scrape it")
+       print("restart, you spelled it wrong or put a country that doesn\'t have data on wikipedia, Japan codes it differently so I can't scrape it")
        raise SystemExit
     else:
         percentages = results.find_all('div', class_="legend")
@@ -31,9 +38,9 @@ def webscrapinglabels(url):
     URL = 'https://en.wikipedia.org/wiki/Religion_in_' + url
     page = requests.get(URL)
     soup = BeautifulSoup(page.content, 'html.parser', from_encoding='utf-8')
-    results = soup.find(class_ = 'thumbcaption')
+    results = soup.find(class_ = 'PieChartTemplate thumb tright')
     if results is None:
-       print("restart, you spelled it wrong or put Japan, Japan codes it differently so I can't scrape it")
+       print("restart, you spelled it wrong or put a country that doesn\'t have data on wikipedia, Japan codes it differently so I can't scrape it")
        raise SystemExit
     else:
         weblabeless = results.find_all('div', class_="legend")
@@ -44,10 +51,13 @@ def webscrapinglabels(url):
             weblabels.append(weblist)
         return weblabels
 
-inputst = input('Put Country Name Here (put _ underscores instead of spaces, Japan doesnt work): \n')
+inputst = input('Put Country Name Here (put _ underscores instead of spaces, Japan doesn\'t work): \n')
 #just put a religion_in wikipedia url
 if inputst  == "Ireland":
     inputst  = 'the_Republic_of_Ireland'
+if inputst == "America" or inputst == "america" or inputst == "usa":
+    inputst = "United_States"
+
 temperc = webscrapingpercentages(inputst)
 templabel = webscrapinglabels(inputst )
 
@@ -74,7 +84,7 @@ for percentages in temperc:
     sizes.append(float(percentages[1:-2]))
     
 #sets a list of 10 colors for each potential religion
-colors_1 = ['yellow', 'green', 'lightskyblue', 'coral','violet','rosybrown','lightgoldenrodyellow','navajowhite','darkgray','mediumaquamarine','white','red']
+colors_1 = ['#52489C', '#7EB77F', '#A491D3', '#F57A7A','#FFCAB1','rosybrown','lightgoldenrodyellow','navajowhite','darkgray','mediumaquamarine','white','red']
 
 #sets the colors sequentially that are necessary for the given piechart
 colors = [] 
