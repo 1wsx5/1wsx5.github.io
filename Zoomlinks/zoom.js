@@ -20,7 +20,7 @@ setInterval(function() {
                         window.open(even[3], "blank_");
                     }
                 } else {
-                    if (today.getHours() === 7 && today.getMinutes() === 15) {
+                    if (today.getHours() === 14 || today.getMinutes() === 15) {
                         window.open(odd[0], "blank_");
                     } else if (today.getHours() === 10 && today.getMinutes() === 37) {
                         window.open(odd[1], "blank_");
