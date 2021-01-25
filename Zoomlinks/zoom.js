@@ -7,7 +7,7 @@ var even = ["https://dadeschools.zoom.us/j/88441708786", "https://dadeschools.zo
 
 setInterval(function() {
     if (today.getDay() != 6 && today.getDay() != 0) {
-        if (today.getMonth() === 11 && today.getDate() <= 18 || today.getMonth() === 0 && today.getDate() != 1 || today.getMonth === 1 && today.getDate() != 15 || today.getMonth() === 2 && today.getDate() <= 25 || today.getMonth === 3 && today.getDate() >= 5 || today.getMonth === 4 && today.getDate() <= 27 || today.getMonth === 5 && today.getDate() <= 9) {
+        if (today.getMonth() === 11 && today.getDate() <= 18 || today.getMonth() === 0 && today.getDate() != 1 && today.getDate() < 25 || today.getMonth === 1 && today.getDate() != 15 || today.getMonth() === 2 && today.getDate() <= 25 || today.getMonth === 3 && today.getDate() >= 5 || today.getMonth === 4 && today.getDate() <= 27 || today.getMonth === 5 && today.getDate() <= 9) {
           if (today.getMonth != 2 || today.getMonth != 5) {
                 if (today.getDate() % 2 === 0) {
                     if (today.getHours() === 7 && today.getMinutes() === 15) {
@@ -29,7 +29,7 @@ setInterval(function() {
                     }
                  }
               }
-      if (today.getMonth === 2 || today.getMonth === 5) {
+      if (today.getMonth === 2 || today.getMonth === 5 || today.getMonth === 0 && today.getDate() >= 25) {
                  if (today.getDate() % 2 === 0) {
                     if (today.getHours() === 7 && today.getMinutes() === 15) {
                         window.open(odd[0], "blank_");
