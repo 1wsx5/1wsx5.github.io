@@ -7,8 +7,8 @@ function onClick() {
    }, 100);
 }
 function SteamClick(){
-if (clicks >= 10) {
-   clicks -= 10;
+if (clicks >= 50) {
+   clicks -= 50;
    x += 1;
    setInterval(function() {
    document.getElementById("steampunk").innerHTML = x;
