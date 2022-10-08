@@ -29,7 +29,7 @@ if (clicks >= 100) {
 
 setInterval(function() {
     clicks += 1*x;
-    clicks += 1*bun;
+    clicks += 2*bun;
     document.getElementById("clicks").innerHTML = clicks;
   }, 1000);
 
