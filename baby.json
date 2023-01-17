@@ -1,0 +1,23 @@
+{"intents":
+  [
+    {
+      "tag":"honina",
+      "input":["baby", "honibear", "babybear", "cutiepie"],
+      "responses":[
+          "Babyboo na",
+          "Yes Babyboo?",
+          "honiii",
+          "I love you :)"
+        ]
+    },
+    {
+      "tag":"ily",
+      "input":["I love you"],
+      "responses":[
+          "I love you too honiboo sweetness na",
+          "awm baby you're so cute *mwuah*",
+          "honnii i love you too baby boo na"
+        ]
+    }
+  ]
+}
